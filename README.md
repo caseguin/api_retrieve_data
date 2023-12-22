@@ -1,2 +1,11 @@
-# api_retrieve_data
-Retrieve data from an API
+***
+# Projet de création d'un app de température
+***
+
+## Objectif
+1. Interagir avec un API
+2. Tester tkinter avec python
+3. Premier projet javascript
+***
+
+Rien d'extraordinaire, un playground pour tester des choses
