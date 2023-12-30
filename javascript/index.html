@@ -3,21 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
     <link rel="stylesheet" href="style.css">
-    <title>Weather</title>
 </head>
+
 <body>
-    <div class="location">
-        <h1 class="location-timezone">Timezone</h1>
-        <p>Icon</p>
+    <div id="weather-container">
+        <h2>Weather App</h2>
+        <input type="text" id="city" placeholder="Enter city">
+        <button onclick="getWeather()">Search</button>
+
+        <img id="weather-icon" alt="">
+        <div id="city-div"></div>
+        <div id="temp-div"></div>
+        <div id="weather-info"></div>
+        <!-- <div id="hourly-forecast"></div> -->
     </div>
-    <div class="temparature">
-        <div class="degre-section">
-            <h2 class="temperature-degree">34</h2>
-            <span>C</span>
-        </div>
-        <div class="temperature-description">cold</div>
-    </div>
-    <script src="api.js"></script>
+
+    <script src="index.js"></script>
 </body>
 </html>
