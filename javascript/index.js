@@ -49,7 +49,7 @@ function displayWeather(data) {
     const iconCode = data.weather[0].icon;
     const iconUrl = `https://openweathermap.org/img/wn/${iconCode}@2x.png`;
     
-    const cityElement = document.getElementById('city-div')
+    const cityElement = document.getElementById('city-div');
     const temperatureElement = document.getElementById('temp-div');
     const weatherElement = document.getElementById('weather-info');
     const iconElement = document.getElementById('weather-icon');
