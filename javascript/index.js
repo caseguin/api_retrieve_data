@@ -1,24 +1,20 @@
+// require('dotenv').config();
+// const api_key = process.env.API_KEY;
+// console.log(api_key);
 
-const fs = require('fs');
- 
-fs.readFile('Input.txt', (err, data) => {
-  if (err) throw err;
- 
-  console.log(data.toString());
-});
+const api_key = 'your api key'
 
-const api_key = 'api_key';
 
 function getWeather() {
-    const cityInput  = document.getElementById('city').value;
+    const city  = document.getElementById('city').value;
 
     if (!city) {
-        alert('Please enter a city');
+        alert('Please enter a city'); 
         return;
     }
 
-    const current_weather_url = `https://api.openweathermap.org/data/2.5/weather?q=${cityInput}&appid=${api_key}`;
-    const forecast_weather_url = `https://api.openweathermap.org/data/2.5/forecast?q=${cityInput}&appid=${api_key}`;
+    const current_weather_url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${api_key}`;
+    const forecast_weather_url = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${api_key}`;
 
     fetchWeatherData(current_weather_url)
 }
